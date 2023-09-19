@@ -12,17 +12,17 @@ students_resource = StudentsResource()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": f"Awesome cloud developer qz2507 says Hello World"}
 
 
 @app.get("/hello/{name}")
 async def say_hello(name: str):
-    return {"message": f"Awesome cloud developer dff9 says hello {name}"}
+    return {"message": f"Awesome cloud developer qz2507 says hello {name}"}
 
 
 @app.get("/hello_text/{name}")
 async def say_hello_text(name: str):
-    the_message = f"Awesome cloud developer dff9 says Hello {name}"
+    the_message = f"Awesome cloud developer qz2507 says Hello {name}"
     rsp = Response(content=the_message, media_type="text/plain")
     return rsp
 
